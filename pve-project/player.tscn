@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://c4f00klnag880"]
 
+[ext_resource type="Texture2D" uid="uid://qvisi3gl8nmy" path="res://pixil-frame-0 (2).png" id="1_4flbx"]
+
 [node name="Player" type="CharacterBody2D" unique_id=42735131]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1159001282]
+texture = ExtResource("1_4flbx")
