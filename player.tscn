@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ehmmviejeoos" path="res://player.gd" id="1_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
-size = Vector2(88, 122)
+size = Vector2(88, 119)
 
 [node name="Player" type="CharacterBody2D" unique_id=42735131]
 position = Vector2(427, 234)
@@ -16,7 +16,7 @@ scale = Vector2(1.8906236, 2.035156)
 texture = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2004810846]
-position = Vector2(-51, 76)
+position = Vector2(-53, 75.5)
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1759516252]
