@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://buk3mf7j08twg"]
+
+[ext_resource type="Texture2D" uid="uid://budo3o7alaeyt" path="res://images.jpg" id="1_wao2c"]
+[ext_resource type="Script" uid="uid://cfyaiy8bvm2p5" path="res://button.gd" id="2_hgi8f"]
+
+[node name="win" type="Node2D" unique_id=545743054]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1775697854]
+position = Vector2(576.5, 323.5)
+scale = Vector2(3.9827585, 3.7413793)
+texture = ExtResource("1_wao2c")
+
+[node name="Label" type="Label" parent="." unique_id=375498977]
+offset_left = 129.0
+offset_top = 84.0
+offset_right = 348.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 53
+text = "You WIN"
+
+[node name="Button" type="Button" parent="." unique_id=2043564833]
+offset_left = 140.0
+offset_top = 166.0
+offset_right = 345.0
+offset_bottom = 221.0
+theme_override_font_sizes/font_size = 34
+text = "PLAY AGAIN"
+script = ExtResource("2_hgi8f")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

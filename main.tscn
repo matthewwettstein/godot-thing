@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c4f00klnag880" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bxx0pqptlny50" path="res://platform.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://e5jmrq0tfw5q" path="res://enemy.tscn" id="2_272bh"]
 [ext_resource type="Texture2D" uid="uid://8gkdafqkl3b3" path="res://pixil-frame-0.png" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bmtl3ss1g4lyi" path="res://main_platform.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b8b84dlkhc3qc" path="res://wall.tscn" id="5_lquwl"]
@@ -182,3 +183,6 @@ offset_bottom = 352.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "Got to restart ig"
+
+[node name="enemy" parent="." unique_id=790827580 instance=ExtResource("2_272bh")]
+position = Vector2(539, -736)

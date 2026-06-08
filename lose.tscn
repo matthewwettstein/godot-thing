@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bjvviu23555tu"]
+
+[ext_resource type="Texture2D" uid="uid://2w1g1v4yuwvv" path="res://0_15wMekX-yT7CuOAM.jpg" id="1_pl8j0"]
+[ext_resource type="Script" uid="uid://3umfuv2j20ei" path="res://button_2.gd" id="2_pl8j0"]
+
+[node name="lose" type="Node2D" unique_id=1759293849]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1726293899]
+position = Vector2(565.5, 264)
+scale = Vector2(2.2458334, 2.1580248)
+texture = ExtResource("1_pl8j0")
+
+[node name="Label" type="Label" parent="." unique_id=1362060929]
+offset_left = 167.0
+offset_top = 375.0
+offset_right = 407.0
+offset_bottom = 444.0
+theme_override_font_sizes/font_size = 50
+text = "You failed"
+
+[node name="Button2" type="Button" parent="." unique_id=858721242]
+offset_left = 696.0
+offset_top = 370.0
+offset_right = 995.0
+offset_bottom = 447.0
+theme_override_font_sizes/font_size = 50
+text = "PLAY AGAIN"
+script = ExtResource("2_pl8j0")
+
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
